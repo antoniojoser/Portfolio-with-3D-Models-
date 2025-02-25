@@ -1,4 +1,34 @@
 /* Estilo general */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav-menu a:hover {
+    background-color: #2cb9cc34;
+    color: #fff;
+    text-decoration: none;
+    
+}
 #titulo {
     font-size: 25px;
     font-weight: bold;
@@ -9,7 +39,7 @@
 }
 body {
 
-    background-image: url('/Imagenes/fondo.png');
+    background-image: url('Imagenes/fondo.png');
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
@@ -253,4 +283,89 @@ footer p a {
 footer p a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+/* Desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+/* Sección de contacto */
+
+
+.contacto-container {
+    text-align: center;
+}
+
+.contacto-container h2 {
+    color: #2cb9cc;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contacto-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1393b3;
+    font-size: 1.1em;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2cb9cc;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #2cb9cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1a8ca8;
+}
+
+.salestech-container button:hover {
+    transform: scale(1.1);
+}
+.salestech-container button {
+    background-color: #cc2c2c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.salestech-container button:hover {
+    background-color: #a82b1a;
 }
